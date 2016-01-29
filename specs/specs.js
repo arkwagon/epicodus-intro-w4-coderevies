@@ -1,6 +1,6 @@
 describe('PizzaOrder', function() {
   it("will take a new pizza order with the given properties", function() {
-    var testPizzaOrder = new PizzaOrder;
+    var testPizzaOrder = new PizzaOrder();
     expect(testPizzaOrder.smallPizza).to.equal(6);
     expect(testPizzaOrder.mediumPizza).to.equal(9);
     expect(testPizzaOrder.largePizza).to.equal(12);
