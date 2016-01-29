@@ -11,7 +11,7 @@ describe('PizzaOrder', function() {
     expect(testPizzaOrder.pineapple).to.equal(2);
   });
   it("will calculate the cost of the pizza order", function() {
-    var testPizzaOrder = new PizzaOrder(testPizzaOrder.mediumPizza, testPizzaOrder.pepperoni);
+    var testPizzaOrder = new PizzaOrder();
     expect(testPizzaOrder.priceCalculator()).to.equal(11);
   });
 });
