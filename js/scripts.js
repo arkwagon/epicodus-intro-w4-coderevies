@@ -9,6 +9,10 @@ function PizzaOrder() {
   this.pineapple = 2;
 }
 
+// PizzaOrder.prototype.priceCalculator= function() {
+//   var pizzaPrice = this.wordArray[Math.floor(Math.random() * (this.wordArray.length))];
+//   return puzzleWord;
+// }
 
 // $(document).ready(function() {
 //   $("****").submit(function(event) {
