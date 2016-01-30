@@ -5,43 +5,87 @@
   	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
   	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-  	<!-- css and js -->
   	<link rel="stylesheet" href="css/styles.css">
   	<script type="text/javascript" src="js/scripts.js"></script>
-    <title>Ping Pong</title>
+    <title>Pizza Order</title>
   </head>
-
   <body>
     <div class="container">
+
       <div class="jumbotron">
-        <h1></h1>
+        <h1>Pizza Order</h1>
+        <h3>It's okay to order a pizza.</h3>
       </div>
 
-      <div>
-        <h2></h2>
-        <h4></h4>
-        <p></p>
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-        <h4></h4>
-        <form>
-          <div class="form-group">
-            <label for="****"></label>
-            <input type="text" class="form-control" id="****">
+      <div class="row">
+
+        <div class="col-md-6">
+          <form id="orderForm">
+            <h4>Pick a size:</h4>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" value="small">Small</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" value="medium">Medium</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" value="large">Large</label>
+            </div>
+            <h4>Add a topping:</h4>
+            <div class="checkbox">
+               <label>
+                 <input type="checkbox" value="pepperoni">
+                 Pepporoni
+               </label>
+             </div>
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox" value="anchovies">
+                 Anchovies
+               </label>
+             </div>
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox" value="veggie">
+                 Veggie
+               </label>
+             </div>
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox" value="olives">
+                 Olives
+               </label>
+             </div>
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox" value="pineapple">
+                 Pineapple
+               </label>
+             </div>
+             <h4>Delivery Options:</h4>
+             <div class="radio">
+               <label><input type="radio" name="optradio2" value="yes">Please Deliver</label>
+             </div>
+             <div class="radio">
+               <label><input type="radio" name="optradio2" value="no">No Thanks</label>
+             </div>
+
+            <button type="submit" class="btn btn-lg btn-default">Order Pizza</button>
+          </form>
+          <div>
+            <h4>Price: $<span id="price"></span></h4>
           </div>
-          <button type="submit" class="btn btn-lg btn-default">Place Your Order</button>
-        </form>
+        </div>
+
+        <div class="col-md-6" id="pictures">
+          <img src="img/pizzaparty.jpg" alt="pizza party graphic">
+
+        </div>
+
       </div>
 
-      <div id="****">
-        <h2>Results:</h2>
-        <ul id="****">
 
-        </ul>
-      </div>
+
     </div>
   </body>
  </html>

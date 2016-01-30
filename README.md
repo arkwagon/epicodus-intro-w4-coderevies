@@ -10,7 +10,7 @@ _Create a website for a pizza company where a user can select size and toppings 
 
 ## Known Bugs
 
-_No known bugs (yet)_
+_Returns NaN for price if form is submitted empty_
 
 ## Support and contact details
 
